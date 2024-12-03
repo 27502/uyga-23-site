@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map va Set</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Map va Set</h1>
+        <p>Map va Set haqida tushunchalar, ularning xususiyatlari va kod misollari.</p>
+    </header>
+    <main>
+        <!-- Map haqida bo'lim -->
+        <section class="content">
+            <h2>Map nima?</h2>
+            <p>
+                <strong>Map</strong> — bu JavaScriptda kalit-qiymat juftliklarini saqlash uchun ishlatiladigan ma'lumot tuzilmasi.
+                Unga har qanday turdagi kalitlarni (string, object, number) qo'shish mumkin.
+            </p>
+            <h3>Asosiy xususiyatlari:</h3>
+            <ul>
+                <li>Kalit-qiymat juftliklarini saqlaydi.</li>
+                <li>Kalit sifatida har qanday turdagi ma'lumotdan foydalanish mumkin.</li>
+                <li>O‘lchamni <code>size</code> xususiyati orqali olish mumkin.</li>
+                <li>Tartibni saqlaydi (qo'shilgan tartibda).</li>
+            </ul>
+            <h3>Map misoli:</h3>
+            <pre class="code-block">
+const map = new Map();
+map.set('name', 'Habibullo');
+map.set('age', 25);
+console.log(map.get('name')); // 'Habibullo'
+console.log(map.has('age'));  // true
+console.log(map.size);        // 2
+            </pre>
+        </section>
+
+        <!-- Set haqida bo'lim -->
+        <section class="content">
+            <h2>Set nima?</h2>
+            <p>
+                <strong>Set</strong> — bu JavaScriptda takrorlanmas qiymatlar to'plamini saqlash uchun ishlatiladigan ma'lumot tuzilmasi.
+                Unda faqat noyob qiymatlar saqlanadi.
+            </p>
+            <h3>Asosiy xususiyatlari:</h3>
+            <ul>
+                <li>Takrorlanmas qiymatlarni saqlaydi.</li>
+                <li>Tartibni saqlaydi (qo'shilgan tartibda).</li>
+                <li>O‘lchamni <code>size</code> xususiyati orqali olish mumkin.</li>
+                <li>Faqat qiymatlarni saqlaydi, kalit yo'q.</li>
+            </ul>
+            <h3>Set misoli:</h3>
+            <pre class="code-block">
+const set = new Set();
+set.add(1);
+set.add(2);
+set.add(1); // Takroriy qiymat qo'shilmaydi
+console.log(set.size); // 2
+console.log(set.has(2)); // true
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Habibullo Raxmatullayev</p>
+    </footer>
+</body>
+</html>
